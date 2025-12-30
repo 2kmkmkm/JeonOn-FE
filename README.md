@@ -1,50 +1,113 @@
-# React + TypeScript + Vite
+# 전대미문 🎆  
+전남대학교 축제 정보 통합 웹 애플리케이션
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+JeonOn은 전남대학교 축제 기간 동안 부스, 이벤트, 공연 타임테이블 등  
+다양한 축제 정보를 한곳에서 확인할 수 있도록 제작된 **웹 애플리케이션**입니다.
 
-Currently, two official plugins are available:
+약 2개월의 짧은 기간 동안 **기획부터 개발, 배포까지 전 과정을 수행**했으며,  
+실제 축제 현장에서 사용되어 방문객들에게 실시간 정보를 제공했습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+PWA 기반으로 구현하여 별도의 앱 설치 없이도 모바일 접근성을 높였고,  
+축제준비위원회와의 협업을 통해 **실사용자 요구사항을 적극 반영**했습니다.  
+개발 중반에 투입되어 기존 코드베이스와 협업 구조를 빠르게 파악하고  
+팀의 개발 흐름에 맞춰 기여한 프로젝트입니다.
 
-## Expanding the ESLint configuration
+## 👥 Team
+- 기획/디자인 2명
+- 프론트엔드 3명
+- 백엔드 4명
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🧑‍💻 My Role
+- 타임테이블 페이지 UI 구현 및 **현재 시간 기반 실시간 공연 안내 기능 개발**
+- 사용자 의견을 수집하는 **피드백 페이지 구현** 및 관리자 확인 흐름 설계
+- 부스/이벤트 등록 폼 페이지 구현  
+  - FormData를 활용한 이미지·텍스트 동시 업로드 처리
+- 등록된 부스/이벤트 정보가 실시간으로 반영되도록 상태 관리 및 렌더링 로직 구성
+- 축제 현장 피드백을 반영한 **반복적인 UI/UX 개선 사이클 운영**
+- axios 기반 비동기 API 통신 및 예외 처리 구현
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠 Tech Stack
+Frontend  
+- React  
+- TypeScript  
+- Tailwind CSS  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Build & Deploy  
+- Vite  
+- Vercel  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Collaboration  
+- GitHub  
+- Notion  
+- Discord  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## ✨ Key Features
+- 간편 로그인 방식  
+  - 회원가입 없이 아이디와 비밀번호만 입력하면 바로 사용 가능  
+  - 축제 특성에 맞춰 인증 절차를 최소화하여 접근성 강화  
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- 안내 페이지  
+  - 축제 지도, 제휴 업체 정보 제공  
+  - 로그인 없이 누구나 접근 가능한 기본 정보 페이지  
+
+- 콘텐츠 페이지  
+  - 축제 기간 중 진행되는 이벤트 및 프로그램 소개  
+
+- 타임테이블 페이지  
+  - 공연 및 주요 행사 일정 확인  
+  - 현재 시간을 기준으로 진행 중·예정 공연을 직관적으로 안내  
+
+- 타임캡슐 기능  
+  - 축제 기간 동안 메시지와 사진 저장  
+  - 축제 종료 후 입력한 이메일로 자동 전송되는 이벤트성 기능  
+
+- 피드백 기능  
+  - 사용자 질문, 민원, 의견 등록  
+  - 축제준비위원회에서 직접 확인 및 대응 가능  
+
+- 관리자 기능 (축제준비위원회)  
+  - 축제 지도, 제휴업체, 콘텐츠 관리  
+  - 타임테이블 및 피드백 정보 관리  
+  - 사용자 반응 및 운영 데이터 모니터링  
+
+## 🔍 What I Focused On
+- **실사용 환경 중심 개발**
+  - 축제 현장에서 바로 사용되는 서비스 특성을 고려해  
+    빠른 로딩과 직관적인 UI에 집중
+- **PWA 기반 접근성 강화**
+  - QR 코드 기반 즉시 접속
+  - 운영체제별 홈 화면 추가 방법 안내
+- **중간 투입 상황에서의 빠른 적응**
+  - 기존 코드 구조와 협업 방식을 빠르게 파악하고  
+    팀 개발 속도에 맞춰 유연하게 기여
+
+## 🧯 Troubleshooting
+- 중간 투입으로 인한 코드 구조 이해 어려움  
+  → Notion에 정리된 구조도와 API 문서를 반복 확인  
+  → 기능 의도와 맥락을 적극적으로 질문하며 전체 흐름 파악  
+
+- Tailwind CSS 실무 경험 부족  
+  → 공식 문서를 참고해 유틸리티 클래스 이해  
+  → 기존 디자인 시스템을 분석해 공통 스타일 구조 구현  
+
+- PWA 환경에서 반응형 이슈 발생  
+  → Tailwind의 responsive variants 활용  
+  → vw, vh 단위 조정과 브라우저 기본 스타일 초기화 적용  
+
+## 🌱 What I Learned
+- Tailwind CSS를 실무에 처음 적용하며  
+  유틸리티 기반 스타일링의 효율성과 구조에 대한 이해도 향상
+- 실제 사용자와 운영진이 있는 환경에서  
+  요구사항 수렴과 피드백 반영의 중요성 체감
+- 진행 중인 프로젝트에 중간 투입되어  
+  코드베이스와 협업 구조에 빠르게 적응하는 경험
+- 실서비스 배포 및 현장 사용 경험을 통해  
+  UI/UX 개선과 빠른 대응의 중요성 학습
+- 제한된 기간 내 핵심 기능을 구현하기 위한  
+  우선순위 판단과 일정 관리 능력 향상
+
+## 📊 Result
+- 축제 기간 3일 동안 방문자 수 약 5,000명
+- 페이지 조회 수 약 35,000회 기록
+- 실제 축제 현장에서 사용된 서비스로 안정적인 운영 경험 확보
