@@ -42,8 +42,8 @@
 ## ✨ Features
 | 타임테이블 | 제휴업체 등록 (관리자) | 피드백 확인 (관리자) | 부스 등록 (관리자) |
 | :---: | :---: | :---: | :---: |
-| <img src="docs/timetable.gif" width="190"/> | <img src="docs/register-affiliate.gif" width="190"/> | <img src="docs/view-feedback.gif" width="190"/> | <img src="docs/register-booth.png" width="190"/> |
-| 공연 사이엔 첫 공연을 회색 NOW로, 20:00이 되면 현재 공연으로 자동 전환 | 기간 선택·이미지 최대 3장 미리보기 후 등록 | 유형별 목록 → 상세 펼침 → 이미지 확대 | 부스 정보·운영 일시·카테고리 입력 |
+| <img src="docs/timetable.gif" width="190"/> | <img src="docs/register-affiliate.gif" width="190"/> | <img src="docs/view-feedback.gif" width="190"/> | <img src="docs/register-booth.gif" width="190"/> |
+| 공연 사이엔 첫 공연을 회색 NOW로, 20:00이 되면 현재 공연으로 자동 전환 | 기간 선택·이미지 최대 3장 미리보기 후 등록 | 유형별 목록 → 상세 펼침 → 이미지 확대 | 위치·운영 일시·카테고리·시간대 선택 후 등록 |
 
 > 축제 종료 후 서버가 종료되어, 화면은 이 레포 코드를 로컬에서 실행해 녹화했습니다. 관리자 화면의 API 응답(피드백 목록·등록 성공)은 **목업 데이터**입니다.
 
